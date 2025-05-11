@@ -1,0 +1,72 @@
+.navbar-container {
+	background-color: white;
+	box-shadow: 0px 7px 28px -19px rgba(66, 68, 90, 1);
+	position: sticky;
+	top: 0;
+	z-index: 50;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 30px;
+	height: 5rem;
+	max-width: 70rem;
+	margin: 0 auto;
+}
+
+.logo {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.nav-links {
+	display: flex;
+	gap: 20px;
+}
+
+.nav-link,
+.nav-contact {
+	position: relative;
+}
+
+.nav-link > a,
+.nav-contact > a {
+	color: #1d3557;
+	text-decoration: none;
+	font-weight: 500;
+	padding: 0.6rem 0.75rem;
+	transition: 0.3s ease;
+	font-weight: 600;
+	display: inline-block;
+}
+
+.nav-link > a:hover {
+	color: var(--third-color);
+}
+
+.nav-contact a {
+	background-color: var(--secondary-color);
+	border-radius: 0.5rem;
+}
+
+.nav-contact > a:hover {
+	background-color: var(--third-color);
+	color: var(--background-color);
+}
+
+.nav-link > a::after {
+	content: "";
+	position: absolute;
+	width: 0;
+	height: 2px;
+	bottom: 8px;
+	left: 0.75rem;
+	background-color: var(--secondary-color);
+	transition: 0.3s ease;
+}
+
+.nav-link > a:hover::after {
+	width: calc(100% - 1.5rem);
+}
