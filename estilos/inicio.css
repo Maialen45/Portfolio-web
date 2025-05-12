@@ -82,6 +82,7 @@
   font-size: 1rem;
   cursor: pointer;
   transition: 0.3s ease;
+  font-weight: 600;
 }
 
 .index-botones button a {
