@@ -1,28 +1,32 @@
 /* estilos/estilos.css */
 
 :root {
-	--primary-color: #1d3557;
-	--secondary-color: #b6d6eb;
-	--third-color: #6698b9;
-	--accent-color: #e63946;
-	--background-color: #f9fafb;
-	--text-color: #1d1d1d;
-	--font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --primary-color: #1d3557;
+  --secondary-color: #b6d6eb;
+  --third-color: #6698b9;
+  --accent-color: #e63946;
+  --background-color: #f9fafb;
+  --text-color: #1d1d1d;
+  --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	font-family: var(--font-family);
-	background-color: var(--background-color);
-	color: var(--text-color);
-	line-height: 1.6;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
 }
 
 .home-container {
-	min-height: 100vh;
+  min-height: 100vh;
+}
+
+.sobremi-container {
+  min-height: 100vh;
 }

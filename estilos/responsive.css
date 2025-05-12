@@ -1,0 +1,22 @@
+/* Responsive */
+@media (max-width: 768px) {
+  .index-container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .index-text-container {
+    text-align: center;
+  }
+
+  .index-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pestanas {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}

@@ -1,103 +1,107 @@
 /* estilos/index.css */
 
 .index-container {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: space-between;
-	margin-top: 5rem;
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: 2rem;
-	padding-right: 2rem;
-	gap: 40px;
-	max-width: 80rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 11rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  gap: 40px;
+  max-width: 80rem;
 }
 
 .index-text-container {
-	flex: 1;
-	max-width: 45rem;
+  flex: 1;
+  max-width: 45rem;
 }
 
-.index-text-container h1 {
-	font-size: 2.5rem;
-	color: var(--primary-color);
-	margin-bottom: 20px;
+.index-title {
+  margin-bottom: 10px;
+}
+
+.index-title h1 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+}
+
+.mi-nombre {
+  display: inline-block;
+  background: linear-gradient(to right, #3b82f6, #10b981);
+  background-clip: text;
+  color: transparent;
+}
+
+.index-subtitle {
+  margin-bottom: 1.5rem;
+}
+
+.index-subtitle h2 {
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 1.5rem;
 }
 
 .index-text-container p {
-	font-size: 1.1rem;
-	margin-bottom: 20px;
+  font-size: 1.1rem;
+  margin-bottom: 20px;
 }
 
 .index-rrss {
-	display: flex;
-	gap: 15px;
-	margin-bottom: 20px;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  margin-left: 10px;
 }
 
 .index-rrss i {
-	font-size: 1.8rem;
-	color: var(--primary-color);
-	transition: color 0.3s ease;
+  font-size: 1.75rem;
+  color: var(--primary-color);
+  transition: color 0.3s ease;
 }
 
 .index-rrss i:hover {
-	color: var(--accent-color);
+  color: var(--third-color);
 }
 
+/* Estilos botones */
 .index-botones {
-	display: flex;
-	gap: 15px;
+  display: flex;
+  gap: 1.5rem;
 }
 
 .index-botones button {
-	background-color: var(--secondary-color);
-	color: white;
-	border: none;
-	padding: 10px 20px;
-	border-radius: 25px;
-	font-size: 1rem;
-	cursor: pointer;
-	transition: background-color 0.3s ease;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
 .index-botones button a {
-	text-decoration: none;
-	color: white;
+  text-decoration: none;
+  color: var(--primary-color);
 }
 
 .index-botones button:hover {
-	background-color: var(--accent-color);
+  background-color: var(--third-color);
+  color: white;
+}
+
+.index-botones button:hover a {
+  color: white;
 }
 
 .index-image img {
-	max-width: 300px;
-	width: 100%;
-	border-radius: 9999px;
-	border: 4px solid white;
-	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-	.index-container {
-		flex-direction: column-reverse;
-		align-items: center;
-	}
-
-	.index-text-container {
-		text-align: center;
-	}
-
-	.index-navbar {
-		flex-direction: column;
-		align-items: flex-start;
-	}
-
-	.pestanas {
-		flex-wrap: wrap;
-		gap: 10px;
-		margin-top: 10px;
-	}
+  max-width: 300px;
+  width: 100%;
+  border-radius: 9999px;
+  border: 4px solid white;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
