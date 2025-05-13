@@ -113,4 +113,22 @@
 .formulario textarea {
   resize: vertical;
   min-height: 8rem;
+  font-family: var(--font-family);
+}
+
+.boton-enviar {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.boton-enviar:hover {
+  background-color: var(--third-color);
+  color: white;
 }

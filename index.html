@@ -70,11 +70,13 @@
               </div>
               <div class="index-botones">
                 <div class="cv">
-                  <button>Descargar CV</button>
+                  <button>
+                    <a href="" download="CV-MaialenEspejo">Descargar CV</a>
+                  </button>
                 </div>
                 <div class="contacto">
                   <button>
-                    <a href="contacto.html">Contacto</a>
+                    <a href="#contacto">Contacto</a>
                   </button>
                 </div>
               </div>
@@ -240,50 +242,97 @@
             <h1>Proyectos</h1>
           </div>
           <div class="carrusel">
-            <div class="proyectos-btn left">
+            <button class="proyectos-btn left">
               <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <div class="carrusel-wrapper">
+              <div class="carrusel-track">
+                <div class="card">
+                  <div class="project-image">
+                    <img src="./imagenes/lista-tareas.png" alt="" />
+                  </div>
+                  <div class="project-title">Listado de tareas</div>
+                  <div class="project-frameworks">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                    <p>JavaScript</p>
+                  </div>
+                  <div class="project-description">edsfed</div>
+                  <div class="project-link">
+                    <a href="https://github.com/Maialen45/Tabla-tareas.git"
+                      >Ver más <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="project-image">
+                    <img src="" alt="" />
+                  </div>
+                  <div class="project-title">Proyecto 1</div>
+                  <div class="project-frameworks">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                  </div>
+                  <div class="project-description">edsfed</div>
+                  <div class="project-link">
+                    <a href=""
+                      >Ver más <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="project-image">
+                    <img src="" alt="" />
+                  </div>
+                  <div class="project-title">Proyecto 1</div>
+                  <div class="project-frameworks">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                  </div>
+                  <div class="project-description">edsfed</div>
+                  <div class="project-link">
+                    <a href=""
+                      >Ver más <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="project-image">
+                    <img src="" alt="" />
+                  </div>
+                  <div class="project-title">Proyecto 1</div>
+                  <div class="project-frameworks">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                  </div>
+                  <div class="project-description">edsfed</div>
+                  <div class="project-link">
+                    <a href=""
+                      >Ver más <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="project-image">
+                    <img src="" alt="" />
+                  </div>
+                  <div class="project-title">Proyecto 1</div>
+                  <div class="project-frameworks">
+                    <p>HTML</p>
+                    <p>CSS</p>
+                  </div>
+                  <div class="project-description">edsfed</div>
+                  <div class="project-link">
+                    <a href=""
+                      >Ver más <i class="fa-solid fa-arrow-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="carrusel-track">
-              <div class="card">
-                <div class="project-image">
-                  <img src="" alt="" />
-                </div>
-                <div class="project-title">Proyecto 1</div>
-                <div class="project-frameworks">
-                  <p>HTML</p>
-                  <p>CSS</p>
-                </div>
-                <div class="project-description">edsfed</div>
-                <div class="project-link"><a href="">Ver más</a></div>
-              </div>
-              <div class="card">
-                <div class="project-image">
-                  <img src="" alt="" />
-                </div>
-                <div class="project-title">Proyecto 1</div>
-                <div class="project-frameworks">
-                  <p>HTML</p>
-                  <p>CSS</p>
-                </div>
-                <div class="project-description">edsfed</div>
-                <div class="project-link"><a href="">Ver más</a></div>
-              </div>
-              <div class="card">
-                <div class="project-image">
-                  <img src="" alt="" />
-                </div>
-                <div class="project-title">Proyecto 1</div>
-                <div class="project-frameworks">
-                  <p>HTML</p>
-                  <p>CSS</p>
-                </div>
-                <div class="project-description">edsfed</div>
-                <div class="project-link"><a href="">Ver más</a></div>
-              </div>
-            </div>
-            <div class="proyectos-btn right">
+            <button class="proyectos-btn right">
               <i class="fa-solid fa-chevron-right"></i>
-            </div>
+            </button>
           </div>
         </div>
       </section>
@@ -367,6 +416,9 @@
                   type="text"
                   placeholder="Tu mensaje..."
                 ></textarea>
+                <button type="submit" class="boton-enviar">
+                  Enviar mensaje
+                </button>
               </div>
             </div>
           </div>
@@ -384,5 +436,6 @@
         </p>
       </div>
     </div>
+    <script src="./scripts/carrusel-proyectos.js" defer></script>
   </body>
 </html>
