@@ -1,0 +1,116 @@
+.contacto-container {
+  background-color: white;
+}
+
+.contacto-extra-container {
+  min-height: calc(100vh - 5rem);
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.contacto-header {
+  text-align: center;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.me {
+  display: inline-block;
+  background: linear-gradient(to right, #3b82f6, #10b981);
+  background-clip: text;
+  color: transparent;
+}
+
+.formulario-informacion {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 0 1.5rem;
+}
+
+.informacion-contacto {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 10rem;
+  gap: 1.5rem;
+  box-shadow: 0px 7px 28px -19px rgba(66, 68, 90, 1);
+  border-radius: 0.5rem;
+  border: 1px solid var(--background-color);
+  padding: 2rem;
+}
+
+.informacion-contacto h2,
+.informacion-contacto p {
+  color: var(--primary-color);
+}
+
+.info {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding-left: 1.5rem;
+}
+
+.info-icon {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
+
+.info-data {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-title {
+  font-weight: bold;
+}
+
+.conecta-container {
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+
+.contacto-rrss {
+  display: flex;
+  gap: 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.contacto-rrss i {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-top: 1rem;
+}
+
+.contacto-rrss i:hover {
+  color: var(--third-color);
+  cursor: pointer;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 15rem;
+}
+
+.formulario label {
+  color: var(--primary-color);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.formulario input,
+.formulario textarea {
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--background-color);
+  margin-bottom: 1rem;
+  background-color: var(--background-color);
+  font-size: 1rem;
+}
+
+.formulario textarea {
+  resize: vertical;
+  min-height: 8rem;
+}

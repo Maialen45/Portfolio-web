@@ -15,12 +15,19 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: var(--font-family);
   background-color: var(--background-color);
   color: var(--text-color);
   line-height: 1.6;
+}
+
+section {
+  scroll-margin-top: 5rem;
 }
 
 .home-container {

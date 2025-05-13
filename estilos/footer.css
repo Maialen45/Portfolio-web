@@ -1,0 +1,48 @@
+.footer-container {
+  padding: 2rem 1rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.footer-nav a {
+  display: inline-block;
+  position: relative;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
+  padding: 0.1rem 0;
+}
+
+.footer-nav a:hover {
+  color: var(--third-color);
+}
+
+.footer-nav a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--third-color);
+  transition: 0.3s ease;
+}
+
+.footer-nav a:hover::after {
+  width: 100%;
+}
+
+.footer-copy {
+  font-size: 0.9;
+  color: var(--third-color);
+}
