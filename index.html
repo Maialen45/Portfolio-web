@@ -45,10 +45,14 @@
           <div class="index-container">
             <div class="index-text-container">
               <div class="index-title">
-                <h1>¡Hola, soy <span class="mi-nombre">Maialen</span>!</h1>
+                <h1>¡Hola, soy <span class="colores">Maialen</span>!</h1>
               </div>
               <div class="index-subtitle">
-                <h2>Estudiante de Desarrollo Full Stack y Bióloga</h2>
+                <h2>
+                  Estudiante de
+                  <span class="colores">Desarrollo Full Stack</span> y
+                  <span class="colores">Bióloga</span>
+                </h2>
               </div>
               <div class="index-description">
                 <p>
@@ -179,10 +183,14 @@
                 <p>
                   <span class="date">07/2024 - 10/2024</span> | UPV/EHU, Leioa
                 </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
-                  distinctio.
-                </p>
+                <ul>
+                  <li>
+                    Revisión bibliográfica sobre inteligencia artificial y
+                    biometría
+                  </li>
+                  <li>Búsqueda de recursos bibliográficos</li>
+                  <li>Gestión de la bibliografía</li>
+                </ul>
               </div>
             </div>
 
@@ -197,8 +205,8 @@
                   Vitoria-Gasteiz
                 </p>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
-                  distinctio.
+                  Cromatografía, espectrometría de masas, microscopís
+                  electrónica, cristalografía de rayos X, secuenciación de ADN.
                 </p>
               </div>
             </div>
@@ -213,10 +221,11 @@
                   <span class="date">06/2023 - 09/2023</span>
                   | INSEC Sanidad Ambiental y Control de Plagas, Galdakao
                 </p>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
-                  distinctio.
-                </p>
+                <ul>
+                  <li>Actualización de los protocolos de actuación</li>
+                  <li>Identificación de insectos</li>
+                  <li>Apoyo a los técnicos aplicadores</li>
+                </ul>
               </div>
             </div>
 
@@ -228,8 +237,9 @@
                 <h3>Grado en Biología</h3>
                 <p><span class="date">2019 - 2023</span> | UPV/EHU, Leioa</p>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
-                  distinctio.
+                  Análisis microbiológicos y genéticos, extracción y
+                  purificación de ADN, PCR, técnicas de muestreo, monitorización
+                  medioambiental.
                 </p>
               </div>
             </div>
@@ -259,7 +269,7 @@
                   </div>
                   <div class="project-description">edsfed</div>
                   <div class="project-link">
-                    <a href="https://github.com/Maialen45/Tabla-tareas.git"
+                    <a href="" target="_blank"
                       >Ver más <i class="fa-solid fa-arrow-right"></i
                     ></a>
                   </div>
@@ -275,7 +285,7 @@
                   </div>
                   <div class="project-description">edsfed</div>
                   <div class="project-link">
-                    <a href=""
+                    <a href="" target="_blank"
                       >Ver más <i class="fa-solid fa-arrow-right"></i
                     ></a>
                   </div>
@@ -291,7 +301,7 @@
                   </div>
                   <div class="project-description">edsfed</div>
                   <div class="project-link">
-                    <a href=""
+                    <a href="" target="_blank"
                       >Ver más <i class="fa-solid fa-arrow-right"></i
                     ></a>
                   </div>
@@ -307,7 +317,7 @@
                   </div>
                   <div class="project-description">edsfed</div>
                   <div class="project-link">
-                    <a href=""
+                    <a href="" target="_blank"
                       >Ver más <i class="fa-solid fa-arrow-right"></i
                     ></a>
                   </div>
@@ -323,7 +333,7 @@
                   </div>
                   <div class="project-description">edsfed</div>
                   <div class="project-link">
-                    <a href=""
+                    <a href="" target="_blank"
                       >Ver más <i class="fa-solid fa-arrow-right"></i
                     ></a>
                   </div>
@@ -387,7 +397,7 @@
                   </div>
                 </div>
                 <div class="conecta-container">
-                  <p>Conecta conmigo</p>
+                  <p>¡Conecta conmigo!</p>
                   <div class="contacto-rrss">
                     <div class="contacto-linkedin">
                       <i class="fa-brands fa-github"><a href=""></a></i>
@@ -399,9 +409,14 @@
                   </div>
                 </div>
               </div>
-              <div class="formulario">
+              <form class="formulario-contacto" id="formulario">
                 <label for="nombre">Nombre</label>
-                <input id="nombre" type="text" placeholder="Tu nombre" />
+                <input
+                  id="nombre"
+                  type="text"
+                  placeholder="Tu nombre"
+                  maxlength="50"
+                />
                 <label for="email">Email</label>
                 <input id="email" type="text" placeholder="tu@email.com" />
                 <label for="asunto">Asunto</label>
@@ -409,17 +424,17 @@
                   id="asunto"
                   type="text"
                   placeholder="¿En qué puedo ayudarte?"
+                  maxlength="100"
                 />
                 <label for="mensaje">Mensaje</label>
                 <textarea
                   id="mensaje"
                   type="text"
                   placeholder="Tu mensaje..."
+                  maxlength="500"
                 ></textarea>
-                <button type="submit" class="boton-enviar">
-                  Enviar mensaje
-                </button>
-              </div>
+                <button class="boton-enviar" id="enviar">Enviar mensaje</button>
+              </form>
             </div>
           </div>
         </div>
@@ -437,5 +452,6 @@
       </div>
     </div>
     <script src="./scripts/carrusel-proyectos.js" defer></script>
+    <script src="./scripts/formulario.js"></script>
   </body>
 </html>

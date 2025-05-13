@@ -1,4 +1,7 @@
 /* estilos/index.css */
+.home-container {
+  min-height: 100vh;
+}
 
 .index-container {
   display: flex;
@@ -12,6 +15,7 @@
   padding-right: 2rem;
   gap: 40px;
   max-width: 80rem;
+  margin-bottom: 3rem;
 }
 
 .index-text-container {
@@ -28,7 +32,7 @@
   color: var(--primary-color);
 }
 
-.mi-nombre {
+.colores {
   display: inline-block;
   background: linear-gradient(to right, #3b82f6, #10b981);
   background-clip: text;
