@@ -1,18 +1,18 @@
 .contacto-container {
   background-color: white;
-  padding-bottom: 3rem;
 }
 
 .contacto-extra-container {
   min-height: calc(100vh - 5rem);
   max-width: 60rem;
   margin: 0 auto;
+  padding-bottom: 2rem;
 }
 
 .contacto-header {
   text-align: center;
   padding-top: 2rem;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
   color: var(--primary-color);
 }
 
