@@ -83,6 +83,48 @@
   .formulario-informacion {
     flex-direction: column;
   }
+
+  .hamburger-btn {
+    display: block;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transition: right 0.3s ease;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-link > a::after {
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .nav-link > a:hover::after {
+    width: 50%;
+  }
+
+  .hamburger-btn.active {
+    transform: rotate(90deg);
+  }
+
+  .hamburger-btn.active i {
+    content: "\f00d"; /* Código Unicode para el icono de cierre (times) */
+  }
 }
 
 /* Móviles */
