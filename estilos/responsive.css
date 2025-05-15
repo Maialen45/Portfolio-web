@@ -50,6 +50,10 @@
     min-width: 100%;
   }
 
+  .project-image img {
+    height: 20rem;
+  }
+
   .formulario-informacion {
     flex-direction: column;
   }
@@ -158,6 +162,10 @@
     padding-top: 2rem;
   }
 
+  .project-image img {
+    height: 100%;
+  }
+
   .proyectos-btn {
     display: none;
   }
@@ -203,6 +211,10 @@
   .code-icons-wrapper img {
     width: 30px;
     height: 30px;
+  }
+
+  .project-image img {
+    height: 100%;
   }
 
   .footer-nav {

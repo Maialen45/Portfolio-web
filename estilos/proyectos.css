@@ -77,13 +77,14 @@
 .project-image img {
   border-radius: 0.5rem;
   width: 100%;
-  height: auto;
+  height: 10rem;
   object-fit: cover;
   background-color: #e0e0e0;
   margin-bottom: 1rem;
 }
 
 .project-title {
+  text-align: center;
   font-weight: bold;
   font-size: 1.3rem;
   color: var(--primary-color);
