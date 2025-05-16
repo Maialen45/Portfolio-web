@@ -85,7 +85,8 @@
   line-height: 1.25rem;
 }
 
-.timeline-content:hover {
+.timeline-content:hover,
+.extra-competencias:hover {
   box-shadow: 0px 0px 28px -5px var(--third-color);
   transition: 0.3s ease;
 }
@@ -113,10 +114,6 @@
   margin: 0 auto;
   margin-top: 1.5rem;
   margin-bottom: 3rem;
-}
-
-.extra-competencias:hover {
-  box-shadow: 0px 0px 28px -5px var(--third-color);
 }
 
 .competencias-header {
