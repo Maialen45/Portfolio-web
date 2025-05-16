@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", function () {
     this.classList.toggle("active");
     navLinks.classList.toggle("active");
 
-    // Cambiar el icono
     if (navLinks.classList.contains("active")) {
       hamburgerIcon.classList.remove("fa-bars");
       hamburgerIcon.classList.add("fa-times");
@@ -19,7 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Cerrar el menú al hacer clic en un enlace
   document.querySelectorAll(".nav-links a").forEach((link) => {
     link.addEventListener("click", function () {
       hamburgerBtn.classList.remove("active");

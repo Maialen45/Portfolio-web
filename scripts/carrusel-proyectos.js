@@ -7,13 +7,12 @@ let currentIndex = 0;
 let visibleCards = 3;
 
 function getVisibleCardsCount() {
-  // Cambia este valor si haces diseño responsivo más adelante
   return 3;
 }
 
 function updateCarousel() {
   const cardWidth = cards[0].offsetWidth;
-  const gap = 32; // 2rem en px, como en CSS
+  const gap = 32;
 
   const offset = -(currentIndex * (cardWidth + gap));
   track.style.transform = `translateX(${offset}px)`;
@@ -33,5 +32,3 @@ btnLeft.addEventListener("click", () => {
     updateCarousel();
   }
 });
-
-// Inicializar
