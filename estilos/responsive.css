@@ -54,6 +54,12 @@
     height: 20rem;
   }
 
+  .extra-competencias {
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
   .formulario-informacion {
     flex-direction: column;
   }
@@ -133,6 +139,11 @@
 
   .hamburger-btn.active i {
     content: "\f00d"; /* Código Unicode para el icono de cierre (times) */
+  }
+
+  .extra-competencias {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
   }
 
   .card {
