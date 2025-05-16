@@ -48,6 +48,7 @@
 
   .card {
     min-width: 100%;
+    padding: 2rem;
   }
 
   .project-image img {
@@ -149,6 +150,7 @@
   .card {
     min-width: 100%;
     margin-bottom: 1rem;
+    padding: 1rem;
   }
 
   .carrusel {

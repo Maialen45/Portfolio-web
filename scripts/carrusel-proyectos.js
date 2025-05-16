@@ -4,10 +4,14 @@ const btnLeft = document.querySelector(".proyectos-btn.left");
 const btnRight = document.querySelector(".proyectos-btn.right");
 
 let currentIndex = 0;
-let visibleCards = 3;
+let visibleCards = getVisibleCardsCount();
 
 function getVisibleCardsCount() {
-  return 3;
+  const trackWidth = track.offsetWidth;
+  const cardWidth = cards[0].offsetWidth;
+  const gap = 32;
+
+  return Math.floor(trackWidth / (cardWidth + gap));
 }
 
 function updateCarousel() {
@@ -19,11 +23,14 @@ function updateCarousel() {
 }
 
 btnRight.addEventListener("click", () => {
-  const maxIndex = cards.length - visibleCards;
+  visibleCards = getVisibleCardsCount();
+  const maxIndex = Math.max(0, cards.length - 1 - visibleCards);
   if (currentIndex < maxIndex) {
     currentIndex++;
-    updateCarousel();
+  } else {
+    currentIndex = maxIndex;
   }
+  updateCarousel();
 });
 
 btnLeft.addEventListener("click", () => {
